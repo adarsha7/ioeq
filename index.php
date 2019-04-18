@@ -1,4 +1,3 @@
-
 <?php
 function curl_get_contents($url)
 {
@@ -22,7 +21,10 @@ $ioe['title'] = $match[1];
 $y='http://exam.ioe.edu.np/Images/NotificationsFile/';
 for ($i=0; $i <6 ; $i++) {
 $ioe['link'][$i]=$y.($ioe['link'][$i]);
+print_r($ioe['link'][$i]);
+echo "<br>";
+print_r($ioe['title'][$i]);
+echo "<br>";
 }
-print_r(json_encode($ioe));
 
 ?>
